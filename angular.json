@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "PostApp": {
+    "postapp": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/post-app",
+            "outputPath": "dist/postapp",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -64,10 +64,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "PostApp:build:production"
+              "browserTarget": "postapp:build:production"
             },
             "development": {
-              "browserTarget": "PostApp:build:development"
+              "browserTarget": "postapp:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -75,7 +75,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "PostApp:build"
+            "browserTarget": "postapp:build"
           }
         },
         "test": {
@@ -97,5 +97,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "2630fa09-2acf-4841-b9c2-c30607f6cce2"
   }
 }
